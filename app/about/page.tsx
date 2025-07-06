@@ -10,7 +10,12 @@ function page() {
     <div className="flex justify-center items-center flex-col pt-20 bg-[#1E1E1E]">
       <div className="max-w-5xl p-2 min-h-screen w-full flex justify-start items-center flex-col">
         <div className="flex flex-col md:flex-row h-full pt-5 pb-5 justify-between items-center">
-          <div className="md:w-1/2 w-full p-5 flex flex-col justify-start">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="md:w-1/2 w-full p-5 flex flex-col justify-start"
+          >
             <h1 className="text-2xl text-cyan-400 pb-10 pt-10">✨ About Me</h1>
             <h3 className="text-white">
               Hi, I{"'"}m{" "}
@@ -31,13 +36,18 @@ function page() {
               <br /> I believe in learning by building, and I enjoy sharing that
               journey through content and open-source contributions.
             </h3>
-          </div>
+          </motion.div>
           <div className="">
             {/* <Image src="/profile.jpeg" alt="Profile" width={300} height={300} /> */}
           </div>
         </div>
 
-        <div className="pt-5 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="pt-5 w-full"
+        >
           <h1 className="text-xl text-[22px] text-cyan-400 pb-3 pt-5 font-bold">
             🛠 Tech Stack
           </h1>
@@ -48,7 +58,7 @@ function page() {
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   whileHover={{ y: -4, scale: 1.02 }}
-                  transition={{ duration: 0.1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
                   key={category}
                   className="border-2 hover:shadow-md border-cyan-200 p-4 rounded-md shadow-sm shadow-cyan-500"
                 >
@@ -64,7 +74,7 @@ function page() {
               )
             )}
           </div>
-        </div>
+        </motion.div>
 
         <div className="pt-5 w-full">
           <h1 className="text-xl text-cyan-200 pb-10 pt-10">

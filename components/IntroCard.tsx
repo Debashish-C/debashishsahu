@@ -31,6 +31,16 @@ function IntroCard() {
           <h1 className="text-[20px] font-medium">Codeforces</h1>
           <h3 className="text-xl text-cyan-400 p-4 font-semibold">670+</h3>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ y: -4, scale: 1.02 }}
+          transition={{ duration: 0.1 }}
+          className="w-full backdrop-blur-[25px] p-2 shadow-sm hover:shadow-md rounded-md text-white shadow-cyan-300"
+        >
+          <h1 className="text-[20px] font-medium">CodeChef</h1>
+          <h3 className="text-xl text-cyan-400 p-4 font-semibold">1🌟</h3>
+        </motion.div>
       </motion.div>
     </div>
   );
