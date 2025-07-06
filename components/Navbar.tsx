@@ -41,7 +41,7 @@ function Navbar() {
           </li>
         </div>
       </ul>
-      <div className="sm:hidden w-full pl-4  pr-4 p-2 flex justify-between items-center ">
+      <div className="sm:hidden w-full pl-4  text-white pr-4 p-2 flex justify-between items-center ">
         <Link
           href="/"
           onClick={() => setActive(false)}
@@ -50,7 +50,7 @@ function Navbar() {
           Debashish Sahu
         </Link>
         <button onClick={() => setActive((p) => !p)} className="">
-          <span className="font-bold">Menu</span>
+          <span className="font-bold dark:text-white">Menu</span>
         </button>
       </div>
       {active && (
@@ -58,7 +58,7 @@ function Navbar() {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="font-bold text-[18px]  flex gap-6 pt-10 font-sans  pb-10 flex-col justify-around items-center"
+          className="font-bold text-[18px] text-white  flex gap-6 pt-10 font-sans  pb-10 flex-col justify-around items-center"
         >
           <Link
             href="/work"
