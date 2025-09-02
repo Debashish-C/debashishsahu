@@ -15,7 +15,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-start pt-20 w-full flex justify-between flex-col sm:items-start items-center"
+            className="sm:text-start text-center pt-20 w-full flex justify-between flex-col sm:items-start items-center"
           >
             <h5 className="pl-2 m-5 pr-2 text-start rounded-4xl p-1 bg-slate-200 w-fit text-[12px] text-black">
               full stack developer and problem solver

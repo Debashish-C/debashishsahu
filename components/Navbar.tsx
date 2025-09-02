@@ -36,9 +36,9 @@ function Navbar() {
           </Link>
         </div>
         <div className="">
-          <li className="hover:text-cyan-400 hover:border-cyan-400 shadow-sm shadow-white text-white border-1 border-white p-2 pl-4 pr-4 rounded-md transition delay-75">
+          <Link href="https://drive.google.com/file/d/1qG7OoKk6rZ_0zLh_ybDQzbirGpKBioBn/view?usp=share_link" className="hover:text-cyan-400 hover:border-cyan-400 shadow-sm shadow-white text-white border-1 border-white p-2 pl-4 pr-4 rounded-md transition delay-75">
             Resume
-          </li>
+          </Link>
         </div>
       </ul>
       <div className="sm:hidden w-full pl-4  text-white pr-4 p-2 flex justify-between items-center ">
