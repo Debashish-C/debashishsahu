@@ -2,7 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import expenx from "../../public/expenx.png";
 const Projects = [
+  {
+    projectImage: expenx,
+    projectName: "expenx",
+    projectDesc:
+      "Track borrowed/lent money per person with history and analysis.",
+  },
   {
     projectImage: "/images/deb-ui.png",
     projectName: "deb-ui",
@@ -13,12 +20,6 @@ const Projects = [
     projectName: "leaklockr",
     projectDesc:
       "One-click API key scanner and expiry notifier for GitHub repos.",
-  },
-  {
-    projectImage: "/images/expenx.png",
-    projectName: "expenx",
-    projectDesc:
-      "Track borrowed/lent money per person with history and analysis.",
   },
 ];
 
