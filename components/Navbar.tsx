@@ -45,7 +45,7 @@ function Navbar() {
           </Link>
         </div>
       </ul>
-      <div className="sm:hidden w-full pl-4  text-white pr-4 p-2 flex justify-between items-center ">
+      <div className="sm:hidden w-full pl-4 bg-white dark:bg-[#1E1E1E] text-black dark:text-white pr-4 p-2 flex justify-between items-center ">
         <Link
           href="/"
           onClick={() => setActive(false)}
@@ -70,7 +70,7 @@ function Navbar() {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="font-bold text-[18px] text-white  flex gap-6 pt-10 font-sans  pb-10 flex-col justify-around items-center"
+          className="font-bold text-[18px] dark:text-white text-black  flex gap-6 pt-10 font-sans  pb-10 flex-col justify-around items-center"
         >
           <Link
             href="/work"
