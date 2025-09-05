@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#1E1E1E] text-white">
+    <div className="flex flex-col  justify-center items-center bg-[#1E1E1E] text-white">
       <div className="max-w-5xl w-full min-h-screen flex flex-col justify-evenly items-center">
         <div className="sm:flex-row flex flex-col w-full p-4  justify-center items-center">
           <motion.div
@@ -31,7 +31,12 @@ export default function Home() {
                 <Image src="/twitter.svg" alt="x" width={40} height={40} />
               </Link>
               <Link href="https://www.linkedin.com/in/debashishtest/">
-                <Image src="/LinkedIn.svg" alt="x" width={44} height={44} />
+                <Image
+                  src="/linked.svg"
+                  alt="LinkedIn"
+                  width={44}
+                  height={44}
+                />
               </Link>
               <Link href="https://github.com/Debashish-C">
                 <Image src="/github.svg" alt="x" width={44} height={44} />
@@ -54,6 +59,7 @@ export default function Home() {
             <ModelViewer />
           </div>
         </div>
+        <div className="w-full p-4 flex flex-col gap-4"></div>
         <div className="w-full flex flex-col gap-4 justify-end pt-5">
           <IntroCard />
         </div>
