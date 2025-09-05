@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col  justify-center items-center bg-[#1E1E1E] text-white">
+    <div className="flex flex-col  justify-center items-center bg-white  text-black dark:bg-[#1E1E1E] dark:text-white">
       <div className="max-w-5xl w-full min-h-screen flex flex-col justify-evenly items-center">
         <div className="sm:flex-row flex flex-col w-full p-4  justify-center items-center">
           <motion.div
@@ -50,7 +50,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -4, scale: 1.02 }}
               transition={{ duration: 0.1 }}
-              className="p-2 m-2 pl-6 pr-6 font-serif shadow-lg shadow-cyan-500 text-white border-2 border-cyan-500 rounded-md"
+              className="p-2 m-2 pl-6 pr-6 font-serif shadow-lg shadow-cyan-500 text-black dark:text-white border-2 border-cyan-500 rounded-md"
             >
               Contact Me
             </motion.button>

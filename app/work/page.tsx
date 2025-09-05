@@ -25,7 +25,7 @@ const Projects = [
 
 function ProjectsPage() {
   return (
-    <div className="pt-20 flex flex-col justify-start items-center bg-[#1E1E1E] min-h-screen text-white">
+    <div className="pt-20 flex flex-col justify-start items-center dark:bg-[#1E1E1E] bg-white min-h-screen text-black dark:text-white">
       <h1 className="text-xl text-cyan-4 font-bold text-cyan-300 pt-10 pb-10  text-start max-w-5xl w-full pl-3 ">
         📍Works
       </h1>

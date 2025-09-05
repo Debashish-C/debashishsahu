@@ -11,7 +11,7 @@ type Category = keyof TechStack;
 
 function page() {
   return (
-    <div className="flex justify-center items-center flex-col pt-20 bg-[#1E1E1E]">
+    <div className="flex justify-center items-center flex-col pt-20 bg-white text-black dark:text-white dark:bg-[#1E1E1E]">
       <div className="max-w-5xl p-2 min-h-screen w-full flex justify-start items-center flex-col">
         <div className="flex flex-col md:flex-row h-full pt-5 pb-5 justify-between items-center">
           <motion.div
@@ -21,7 +21,7 @@ function page() {
             className="md:w-1/2 w-full p-5 flex flex-col justify-start"
           >
             <h1 className="text-2xl text-cyan-400 pb-10 pt-10">✨ About Me</h1>
-            <h3 className="text-white">
+            <h3 className="dark:text-white text-black">
               Hi, I{"'"}m{" "}
               <span className="font-semibold text-cyan-400">
                 Debashish Sahu
@@ -80,7 +80,7 @@ function page() {
                   <h2 className="text-[18px] font-semibold capitalize text-cyan-300 mb-2">
                     {category}
                   </h2>
-                  <ul className="space-y-1 text-sm text-white">
+                  <ul className="space-y-1 text-sm  text-black dark:text-white">
                     {items.map((item) => (
                       <li key={item}>• {item}</li>
                     ))}
@@ -95,7 +95,7 @@ function page() {
           <h1 className="text-xl text-cyan-200 pb-10 pt-10">
             🚀 What I{"'"}m Working On
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-black dark:text-white">
             <div className="w-full h-60 text-center">
               <div className="w-full h-40 flex justify-center items-center">
                 <Image src={uiImg} alt="UI Image" width={150} height={100} />

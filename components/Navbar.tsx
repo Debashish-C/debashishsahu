@@ -7,7 +7,7 @@ function Navbar() {
   const [active, setActive] = useState(false);
   return (
     <nav className="sm:flex  flex-col pt-4 z-50 w-full backdrop-blur-[10px] shadow-sm fixed top-0 left-0 pb-3 justify-center items-center">
-      <ul className="text-[15px] hidden   text-white max-w-5xl sm:flex justify-between items-center gap-16 p-2 pl-4 pr-2 rounded-[50px] w-full">
+      <ul className="text-[15px] hidden  text-black bg-white dark:bg-[#1E1E1E] dark:text-white max-w-5xl sm:flex justify-between items-center gap-16 p-2 pl-4 pr-2 rounded-[50px] w-full">
         <div className="">
           <Link
             href="/"
@@ -36,10 +36,10 @@ function Navbar() {
             Blog
           </Link> */}
         </div>
-        <div className="">
+        <div className="flex gap-4 justify-center items-center  ">
           <Link
             href="https://drive.google.com/file/d/1qG7OoKk6rZ_0zLh_ybDQzbirGpKBioBn/view?usp=share_link"
-            className="hover:text-cyan-400 hover:border-cyan-400 shadow-sm shadow-white text-white border-1 border-white p-2 pl-4 pr-4 rounded-md transition delay-75"
+            className="hover:text-cyan-400 hover:border-cyan-400 shadow-sm dark:shadow-white   text-black dark:text-white border-1 dark:border-white border-cyan-400 p-2 pl-4 pr-4 rounded-md transition delay-75"
           >
             Resume
           </Link>

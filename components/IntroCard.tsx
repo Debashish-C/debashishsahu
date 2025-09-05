@@ -29,7 +29,7 @@ function IntroCard() {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ y: -4, scale: 1.02 }}
           transition={{ duration: 0.1 }}
-          className="w-full backdrop-blur-[25px] p-2 shadow-sm hover:shadow-md rounded-md text-white shadow-cyan-300"
+          className="w-full backdrop-blur-[25px] p-2 shadow-sm hover:shadow-md rounded-md  text-black dark:text-white shadow-cyan-300"
         >
           <Link href="https://codeforces.com/profile/debashish01">
             <h1 className="text-[20px] font-medium">Codeforces</h1>
@@ -41,7 +41,7 @@ function IntroCard() {
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ y: -4, scale: 1.02 }}
           transition={{ duration: 0.1 }}
-          className="w-full backdrop-blur-[25px] p-2 shadow-sm hover:shadow-md rounded-md text-white shadow-cyan-300"
+          className="w-full backdrop-blur-[25px] p-2 shadow-sm hover:shadow-md rounded-md dark:text-white text-black shadow-cyan-300"
         >
           <Link href="https://www.codechef.com/users/deba_321">
             <h1 className="text-[20px] font-medium">CodeChef</h1>
