@@ -52,7 +52,7 @@ export default function Home() {
               transition={{ duration: 0.1 }}
               className="p-2 m-2 pl-6 pr-6 font-serif shadow-lg shadow-cyan-500 text-black dark:text-white border-2 border-cyan-500 rounded-md"
             >
-              Contact Me
+              <Link href="/contact">Contact Me</Link>
             </motion.button>
           </motion.div>
           <div className="hidden sm:flex">

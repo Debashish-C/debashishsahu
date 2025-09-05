@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Playfair_Display, Poppins } from "next/font/google";
+import Link from "next/link";
 
 // Fonts
 const playfair = Playfair_Display({
@@ -16,17 +17,16 @@ const poppins = Poppins({
 function Contact() {
   return (
     <div
-      className={`min-h-screen w-full p-8 md:p-16 bg-gradient-to-b from-white via-purple-50 to-pink-50 ${poppins.className}`}
+      className={`min-h-screen w-full flex flex-col dark:bg-[#1E1E1E] justify-center items-center ${poppins.className}`}
     >
-      {/* Heading */}
       <h1
-        className={`text-5xl sm:text-6xl md:text-7xl font-extrabold text-purple-600 mb-12 ${playfair.className}`}
+        className={`text-2xl text-cyan-300 text-center p-4 ${playfair.className}`}
       >
         Contact Me
       </h1>
 
       {/* Contact Form */}
-      <div className="max-w-3xl mx-auto bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
+      <div className="max-w-3xl mx-auto border-cyan-400 border backdrop-blur-md p-8 rounded-2xl shadow-lg">
         <form className="flex flex-col gap-6">
           <div className="flex flex-col">
             <label className="mb-2 font-semibold text-gray-700">Name</label>
@@ -55,33 +55,32 @@ function Contact() {
             />
           </div>
 
-          <button
+          <Link
+            href="/"
             type="submit"
-            className="mt-4 px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl hover:from-pink-500 hover:to-purple-500 transition-all duration-300 shadow-lg"
+            className="mt-4 px-8 py-4 bg-gradient-to-r from-cyan-200 to-cyan-300 text-black text-center  font-bold rounded-xl hover:from-cyan-500 hover:to-cyan-200 transition-all duration-300 shadow-lg"
           >
             Send Message
-          </button>
+          </Link>
         </form>
-
-        {/* Optional Social Links */}
         <div className="mt-10 flex justify-center gap-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Debashish-C"
             target="_blank"
-            className="text-gray-800 hover:text-purple-600 transition-colors duration-300 text-2xl"
+            className="text-gray-800 dark:text-gray-400 hover:text-purple-600 transition-colors duration-300 text-xl"
           >
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/debashishtest"
             target="_blank"
-            className="text-gray-800 hover:text-purple-600 transition-colors duration-300 text-2xl"
+            className="text-gray-800 dark:text-gray-400 hover:text-purple-600 transition-colors duration-300 text-xl"
           >
             LinkedIn
           </a>
           <a
-            href="mailto:youremail@example.com"
-            className="text-gray-800 hover:text-purple-600 transition-colors duration-300 text-2xl"
+            href="mailto:sahudeba03@gmail.com"
+            className="text-gray-800 dark:text-gray-400 hover:text-purple-600 transition-colors duration-300 text-xl"
           >
             Email
           </a>
