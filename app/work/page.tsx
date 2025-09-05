@@ -10,17 +10,17 @@ const Projects = [
     projectDesc:
       "Track borrowed/lent money per person with history and analysis.",
   },
-  {
-    projectImage: "/images/deb-ui.png",
-    projectName: "deb-ui",
-    projectDesc: "A modern UI component library with 30+ polished components.",
-  },
-  {
-    projectImage: "/images/leaklockr.png",
-    projectName: "leaklockr",
-    projectDesc:
-      "One-click API key scanner and expiry notifier for GitHub repos.",
-  },
+  // {
+  //   projectImage: "/images/deb-ui.png",
+  //   projectName: "deb-ui",
+  //   projectDesc: "A modern UI component library with 30+ polished components.",
+  // },
+  // {
+  //   projectImage: "/images/leaklockr.png",
+  //   projectName: "leaklockr",
+  //   projectDesc:
+  //     "One-click API key scanner and expiry notifier for GitHub repos.",
+  // },
 ];
 
 function ProjectsPage() {

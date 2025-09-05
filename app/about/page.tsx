@@ -2,7 +2,11 @@
 import { motion } from "framer-motion";
 import { TechStack, techStack } from "@/data/tech";
 import React from "react";
-
+import uiImg from "../../public/ui.png";
+import Image from "next/image";
+import lock from "../../public/lock.png";
+import ytImg from "../../public/yt.png";
+import Link from "next/link";
 type Category = keyof TechStack;
 
 function page() {
@@ -37,9 +41,20 @@ function page() {
               journey through content and open-source contributions.
             </h3>
           </motion.div>
-          <div className="">
-            {/* <Image src="/profile.jpeg" alt="Profile" width={300} height={300} /> */}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="sm:w-1/2 pt-20  w-full flex flex-col justify-center items-center"
+          >
+            <Image
+              src="/profile.jpg"
+              alt="Profile"
+              width={400}
+              className="rounded-xl"
+              height={400}
+            />
+          </motion.div>
         </div>
 
         <motion.div
@@ -82,7 +97,9 @@ function page() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-white">
             <div className="w-full h-60 text-center">
-              <div className="w-full h-40"></div>
+              <div className="w-full h-40 flex justify-center items-center">
+                <Image src={uiImg} alt="UI Image" width={150} height={100} />
+              </div>
               <h2 className="text-cyan-400 font-semibold text-[18px]">
                 deb-ui
               </h2>
@@ -91,7 +108,9 @@ function page() {
               </p>
             </div>
             <div className="w-full h-60 text-center">
-              <div className="w-full h-40"></div>
+              <div className="w-full h-40 flex justify-center items-center">
+                <Image src={lock} alt="UI Image" width={150} height={100} />
+              </div>
               <h2 className="text-cyan-400 font-semibold text-[18px]">
                 LeakLockr
               </h2>
@@ -99,15 +118,20 @@ function page() {
                 One-click API key scanner and expiry notifier
               </p>
             </div>
-            <div className="w-full h-60 text-center">
-              <div className="w-full h-40"></div>
+            <Link
+              href="https://www.youtube.com/@dot.dev-0"
+              className="w-full h-60 text-center"
+            >
+              <div className="w-full h-40 flex justify-center items-center">
+                <Image src={ytImg} alt="UI Image" width={150} height={100} />
+              </div>
               <h2 className="text-cyan-400 font-semibold text-[18px]">
                 dot dev
               </h2>
               <p className="text-[15px]">
                 Sharing 100+ videos on dev tips, and journey
               </p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 function Navbar() {
   const [active, setActive] = useState(false);
   return (
@@ -28,15 +29,18 @@ function Navbar() {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             href="/blog"
             className="hover:border-cyan-400 border-b-2 border-transparent transition delay-75"
           >
             Blog
-          </Link>
+          </Link> */}
         </div>
         <div className="">
-          <Link href="https://drive.google.com/file/d/1qG7OoKk6rZ_0zLh_ybDQzbirGpKBioBn/view?usp=share_link" className="hover:text-cyan-400 hover:border-cyan-400 shadow-sm shadow-white text-white border-1 border-white p-2 pl-4 pr-4 rounded-md transition delay-75">
+          <Link
+            href="https://drive.google.com/file/d/1qG7OoKk6rZ_0zLh_ybDQzbirGpKBioBn/view?usp=share_link"
+            className="hover:text-cyan-400 hover:border-cyan-400 shadow-sm shadow-white text-white border-1 border-white p-2 pl-4 pr-4 rounded-md transition delay-75"
+          >
             Resume
           </Link>
         </div>
@@ -50,7 +54,15 @@ function Navbar() {
           Debashish Sahu
         </Link>
         <button onClick={() => setActive((p) => !p)} className="">
-          <span className="font-bold dark:text-white">Menu</span>
+          {/* <span className="font-bold dark:text-white"> */}
+          <Image
+            src="./hamicon.svg"
+            className="bg-white rounded-2xl"
+            width={40}
+            height={40}
+            alt="Menu"
+          />
+          {/* </span> */}
         </button>
       </div>
       {active && (
@@ -74,13 +86,13 @@ function Navbar() {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             href="/blog"
             className="hover:text-cyan-400 hover:underline"
             onClick={() => setActive((p) => !p)}
           >
             Blog
-          </Link>
+          </Link> */}
           <Link
             href=""
             className="hover:text-cyan-400 hover:underline"

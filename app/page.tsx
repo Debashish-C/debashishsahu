@@ -1,10 +1,9 @@
 "use client";
-
-import DebUi from "@/components/Deb-ui";
+import Link from "next/link";
 import IntroCard from "@/components/IntroCard";
-import LeakLockr from "@/components/LeakLockr";
 import { ModelViewer } from "@/components/Model-3d";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -27,12 +26,26 @@ export default function Home() {
               I build full-stack web & mobile apps that solve real-world
               problems.
             </h4>
+            <div className="flex pt-6 pb-6 gap-8 justify-center items-center  ">
+              <Link href="https://x.com/its_developr">
+                <Image src="/twitter.svg" alt="x" width={40} height={40} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/debashishtest/">
+                <Image src="/LinkedIn.svg" alt="x" width={44} height={44} />
+              </Link>
+              <Link href="https://github.com/Debashish-C">
+                <Image src="/github.svg" alt="x" width={44} height={44} />
+              </Link>
+              <Link href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=sahudeba03@gmail.com&tf=1">
+                <Image src="/gmail.svg" alt="x" width={44} height={44} />
+              </Link>
+            </div>
             <motion.button
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -4, scale: 1.02 }}
               transition={{ duration: 0.1 }}
-              className="p-2 m-2 pl-4 pr-4 font-serif shadow-lg shadow-cyan-500 text-white border-2 border-cyan-500 rounded-md"
+              className="p-2 m-2 pl-6 pr-6 font-serif shadow-lg shadow-cyan-500 text-white border-2 border-cyan-500 rounded-md"
             >
               Contact Me
             </motion.button>
@@ -45,11 +58,11 @@ export default function Home() {
           <IntroCard />
         </div>
       </div>
-      <div className="w-full text-start pl-5 max-w-5xl">
+      {/* <div className="w-full text-start pl-5 max-w-5xl">
         <h1 className="text-cyan-400 text-2xl">Features</h1>
         <DebUi />
         <LeakLockr />
-      </div>
+      </div> */}
     </div>
   );
 }
