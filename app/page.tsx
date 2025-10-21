@@ -99,7 +99,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-full sm:w-1/2 justify-center items-center"
+            className="w-full  sm:flex hidden justify-center items-center"
           >
             <ModelViewer />
           </motion.div>
