@@ -58,7 +58,7 @@ function Contact() {
           <Link
             href="/"
             type="submit"
-            className="mt-4 px-8 py-4 bg-gradient-to-r from-cyan-200 to-cyan-300 text-black text-center  font-bold rounded-xl hover:from-cyan-500 hover:to-cyan-200 transition-all duration-300 shadow-lg"
+            className="mt-4 px-8 py-4 bg-gradient-to-r from-cyan-200 to-cyan-300 text-black text-center   font-bold rounded-xl hover:from-cyan-500 hover:to-cyan-200 transition-all duration-300 shadow-lg"
           >
             Send Message
           </Link>
