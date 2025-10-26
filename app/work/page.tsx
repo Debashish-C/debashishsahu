@@ -17,7 +17,7 @@ const Projects = [
 function ProjectsPage() {
   return (
     <div className="pt-24 flex flex-col justify-start items-center dark:bg-[#121212] bg-gray-50 min-h-screen text-black dark:text-white px-4">
-      <div className="max-w-6xl w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-5xl w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Projects.map((project, index) => (
           <motion.div
             key={index}

@@ -9,14 +9,15 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: "Work", href: "/work" },
-    { name: "About", href: "/about" },
+    { name: "projects", href: "/work" },
+    { name: "about", href: "/about" },
+    { name: "contacts", href: "/contact" },
     // { name: "Blog", href: "/blog" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/70 dark:bg-[#0D0D0D]/70 border-b border-gray-200 dark:border-gray-800">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl  dark:bg-[#0D0D0D]/70  border-gray-200 dark:border-gray-800">
+      <nav className="max-w-5xl mx-auto flex  items-center justify-between px-6 py-3">
         {/* Brand */}
         <Link
           href="/"
