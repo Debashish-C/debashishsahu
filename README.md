@@ -169,9 +169,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Debashish Sahu**
 - **Website**: [debashishsahu.in](https://debashishsahu.in)
-- **Email**: contact@debashishsahu.in
-- **LinkedIn**: [linkedin.com/in/debashishsahu](https://linkedin.com/in/debashishsahu)
-- **GitHub**: [github.com/debashishsahu](https://github.com/debashishsahu)
+- **Email**: sahudeba03@gmail.com
+- **LinkedIn**: [linkedin.com/in/debashishsahu](https://linkedin.com/in/debashishtest)
+- **GitHub**: [github.com/debashishsahu](https://github.com/Debashish-C)
 
 ---
 
