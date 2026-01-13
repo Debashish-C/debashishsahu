@@ -10,27 +10,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const socialLinks = [
   {
     name: "Email",
-    href: "mailto:contact@debashishsahu.in",
+    href: "mailto:sahudeba03@gmail.com",
     icon: Mail,
     description: "contact@debashishsahu.in",
   },
   {
     name: "GitHub",
-    href: "https://github.com/debashishsahu",
+    href: "https://github.com/Debashish-C",
     icon: Github,
-    description: "@debashishsahu",
+    description: "@Debashish-C",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/debashishsahu",
+    href: "https://linkedin.com/in/debashishtest",
     icon: Linkedin,
-    description: "/in/debashishsahu",
+    description: "/in/debashishtest",
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/debashishsahu",
+    href: "https://twitter.com/its_developr",
     icon: Twitter,
-    description: "@debashishsahu",
+    description: "@its_developr",
   },
 ]
 
