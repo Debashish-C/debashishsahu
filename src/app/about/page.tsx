@@ -85,7 +85,7 @@ export default function AboutPage() {
       {/* Intro Section */}
       <Section animate={true}>
         <motion.div
-          className="max-w-4xl mx-auto space-y-6"
+          className="max-w-6xl mx-auto space-y-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -95,21 +95,54 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-6">Who I Am</h2>
           </div>
 
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              Hi! I'm Debashish Sahu, a dedicated software engineer currently pursuing my Master of Computer Applications (MCA) at NIT Bhopal.
-              My journey in technology began with a curiosity about how things work behind the scenes, which led me to fall in love with programming.
-            </p>
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            {/* Profile Photo */}
+            <motion.div
+              className="flex-shrink-0"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="relative">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl">
+                  <img
+                    src="/profile.jpeg"
+                    alt="Debashish Sahu - Software Engineer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                  <Code className="w-8 h-8 text-primary-foreground" />
+                </div>
+              </div>
+            </motion.div>
 
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              I specialize in full-stack web development, with a strong focus on building scalable, user-centric applications.
-              My experience spans from creating responsive frontends with React and Next.js to developing robust backends with Node.js and databases like PostgreSQL.
-            </p>
+            {/* Introduction Text */}
+            <motion.div
+              className="flex-1 space-y-6 text-center lg:text-left"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  Hi! I'm <span className="font-semibold text-foreground">Debashish Sahu</span>, a dedicated software engineer currently pursuing my Master of Computer Applications (MCA) at NIT Bhopal.
+                  My journey in technology began with a curiosity about how things work behind the scenes, which led me to fall in love with programming.
+                </p>
 
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              Beyond coding, I'm passionate about startups and real-world problem-solving. I believe technology should serve humanity,
-              and I'm always looking for opportunities to build products that make a positive impact.
-            </p>
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I specialize in full-stack web development, with a strong focus on building scalable, user-centric applications.
+                  My experience spans from creating responsive frontends with React and Next.js to developing robust backends with Node.js and databases like PostgreSQL.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  Beyond coding, I'm passionate about startups and real-world problem-solving. I believe technology should serve humanity,
+                  and I'm always looking for opportunities to build products that make a positive impact.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </Section>
