@@ -198,7 +198,7 @@ export default function Home() {
 
           <div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate software engineer currently pursuing my MCA at NIT Bhopal.
+              Hi, I'm Debashish Sahu, a passionate software engineer currently pursuing my Master of Computer Applications (MCA) at NIT Bhopal.
               With a strong foundation in full-stack development, I love building products that
               solve real-world problems and make a positive impact. When I'm not coding, you'll
               find me contributing to open-source projects or exploring new technologies.
